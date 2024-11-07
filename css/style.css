@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+:root {
+  /*  COLOR  */
+  --run-main-green: #004d40;
+  --run-main-yellow: #ffcd29;
+  --run-main-red: #FF3819;
+  --run-main-mint: #3AE9E6;
+  --run-main-white: #ffffff;
+  --run-main-black: #222;
+  --run-main-darkgray: #555;
+  --run-main-gray: #999;
+  --run-main-lightgray01: #d9d9d9;
+  --run-main-lightgray02: #eee;
+  --run-sub-green02: #4C935C;
+}
+
+#wrap {
+  position: relative;
+}
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--run-main-green);
+}
+.splash img {
+  animation: opacity 1s linear;
+}
+.splash p {
+  color: var(--run-main-white);
+  font-size: 1.4rem;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* onboard */
+.onboard-pagination {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+}
+
+/* challenge.html */
+#menu_list{display: flex;}
+#menu_list button.active{color: var(--run-main-green); border-bottom: 2px solid var(--run-main-green);}
+#menu_list button{display: flex; width: calc(100%/2); height: 50px; align-items: center; justify-content: center; font-weight: 500; color: var(--run-main-gray);}
+
+/*page_list01*/
+.swiper a{display: flex; width: 100%; height: 240px; flex-direction: column;}
+.swiper .swiper-pagination{left: auto; right: 16px; bottom: 16px; width: 55px; padding: 4px 4px; font-size: 1.2rem; color: var(--run-main-white); border-radius: 500px; background: rgba(0, 0, 0, 0.4);}
+
+.banner01 a:first-child{background: url(../img/sub/challenge/banner_challenge01.png) no-repeat center/cover;}
+.banner01 a:nth-child(2){background: url(../img/sub/challenge/banner_challenge01.png) no-repeat center/cover;}
+.banner01 a:last-child{background: url(../img/sub/challenge/banner_challenge01.png) no-repeat center/cover;}
+
+/*.section*/
+.line{width: 100%; height: 1px; background: var(--run-main-lightgray02);}
+
+.section{padding: 20px 0;}
+.section:last-child{padding: 20px 0 130px;}
+
+.section .tit{display: flex; justify-content: space-between; align-items: end;}
+.section .tit h2{font-weight: 600; font-size: 1.8rem;}
+.section .tit .btn_view{font-size: 1.4rem; color: var(--run-main-darkgray);}
+
+.section .card_list{padding: 20px 0 0; display: flex; flex-direction: column; gap: 16px;}
+
+/*.all*/
+.all{text-align: center;}
+.all p{padding: 0 0 10px; font-family: 500; font-size: 1.2rem; color: var(--run-main-darkgray);}
+.view_all{padding: 6px 12px; font-weight: 500; font-size: 1.4rem; color: var(--run-main-green); border: 2px solid var(--run-main-green); border-radius: 50px;}
+
+/*#ing*/
+#ing .card_ing{display: flex; justify-content: space-between;}
+
+#ing .card_ing .img_box{width: 80px; height: 80px; border-radius: 10px;}
+
+#ing .card_ing .txt_box{display: flex; width: 180px; padding: 2px 0; flex-direction: column; justify-content: space-between;}
+#ing .card_ing .txt_box h3{font-weight: 500; font-size: 1.6rem;}
+#ing .card_ing .txt_box h3+p{margin: 0 0 20px; color: var(--run-main-darkgray); font-size: 1.4rem;}
+#ing .card_ing .txt_box span{color: var(--run-main-gray); font-weight: 500; font-size: 1.2rem;}
+
+#ing .card_ing .d-day{display: flex; width: 26px; flex-direction: column; justify-content: space-between; align-items: center;}
+#ing .card_ing .d-day span, #ing .card_ing .d-day p{color: var(--run-main-gray); font-weight: 500; font-size: 1.4rem;}
+
+#ing .ing01 .img_box{background: url(../img/sub/challenge/challenge01.jpg) no-repeat center/cover;}
+#ing .ing02 .img_box{background: url(../img/sub/challenge/challenge02.jpg) no-repeat center/cover;}
+#ing .ing03 .img_box{background: url(../img/sub/challenge/challenge03.jpg) no-repeat center/cover;}
+#ing .ing04 .img_box{background: url(../img/sub/challenge/challenge04.jpg) no-repeat center/cover;}
+
+/*#special*/
+#special .swiper{padding: 20px 16px 0;}
+#special .swiper > div{height: 310px;}
+#special .swiper a{height: auto;}
+
+#special .swiper .img_box{width: 100%; height: 220px; border-radius: 10px 10px 0 0; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);}
+
+#special .swiper .txt_box{display: flex; padding: 10px; flex-direction: column; border-radius: 0 0 10px 10px; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);}
+#special .swiper .txt_box span{color: var(--run-main-darkgray); font-size: 1.2rem;}
+#special .swiper .txt_box h4{padding: 2px 0 6px; font-weight: 500; font-size: 1.6rem;}
+#special .swiper .txt_box h4+p{color: var(--run-main-darkgray); font-size: 1.4rem;}
+
+#special .special01 .img_box{background: url(../img/sub/challenge/special_challenge01.png) no-repeat center/cover;}
+#special .special02 .img_box{background: url(../img/sub/challenge/special_challenge02.jpg) no-repeat center/cover;}
+#special .special03 .img_box{background: url(../img/sub/challenge/special_challenge03.jpg) no-repeat center/cover;}
+
+
+/*#ing_challenge*/
+#ing_challenge .card_ing{display: flex; justify-content: space-between;}
+
+#ing_challenge .card_ing .img_box{width: 80px; height: 80px; border-radius: 10px;}
+
+#ing_challenge .card_ing .txt_box{display: flex; width: 180px; padding: 2px 0; flex-direction: column; justify-content: space-between;}
+#ing_challenge .card_ing .txt_box h3{font-weight: 500; font-size: 1.6rem;}
+#ing_challenge .card_ing .txt_box h3+p{margin: 0 0 20px; color: var(--run-main-darkgray); font-size: 1.4rem;}
+#ing_challenge .card_ing .txt_box span{color: var(--run-main-gray); font-weight: 500; font-size: 1.2rem;}
+
+#ing_challenge .card_ing .d-day{display: flex; width: 26px; flex-direction: column; justify-content: center; align-items: center;}
+#ing_challenge .card_ing .d-day p{color: var(--run-main-gray); font-weight: 500; font-size: 1.4rem;}
+
+#ing_challenge .ing01 .img_box{background: url(../img/sub/challenge/challenge01.jpg) no-repeat center/cover;}
+#ing_challenge .ing02 .img_box{background: url(../img/sub/challenge/challenge02.jpg) no-repeat center/cover;}
+#ing_challenge .ing03 .img_box{background: url(../img/sub/challenge/challenge03.jpg) no-repeat center/cover;}
+#ing_challenge .ing04 .img_box{background: url(../img/sub/challenge/challenge04.jpg) no-repeat center/cover;}
+
+
+/*page_list02*/
+.km_list{display: flex; gap: 10px;}
+.km_list li{padding: 2px 10px; color: var(--run-main-white); font-size: 1.4rem; border-radius: 50px; background: var(--run-main-green);}
+.km_list li.full, .km_list li.half{background: var(--run-main-mint);}
+
+/*banner02*/
+.banner02 a{display: flex; padding: 16px; flex-direction: column; justify-content: end;}
+.banner02 .txt_box span{color: var(--run-main-white); font-size: 1.4rem;}
+.banner02 .txt_box p{padding: 4px 0 0; color: var(--run-main-white); font-weight: 600; font-size: 2.2rem;}
+
+.banner02 .swiper-pagination{color: var(--run-main-white); background: rgba(255, 255, 255, 0.4);}
+
+.banner02 a:first-child{background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(../img/sub/challenge/banner_marathon01.jpg) no-repeat center/cover;}
+.banner02 a:nth-child(2){background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(../img/sub/challenge/banner_marathon01.jpg) no-repeat center/cover;}
+.banner02 a:last-child{background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(../img/sub/challenge/banner_marathon01.jpg) no-repeat center/cover;}
+
+/*tag_list*/
+.tag_list{display: flex; padding: 20px 16px 0; gap: 10px;}
+.tag_list li.active a{color: var(--run-main-white); border: 1px solid var(--run-main-green); background: var(--run-main-green);}
+.tag_list li a{display: block; padding: 4px 16px; color: var(--run-main-gray); border: 1px solid var(--run-main-gray); border-radius: 50px; font-weight: 500; font-size: 1.4rem;}
+
+/*#now*/
+#now  .swiper{padding: 20px 16px 0;}
+#now .swiper > div{height: 310px;}
+#now .swiper a{width: 343px; height: auto;}
+
+#now .swiper .img_box{display: flex; width: 100%; height: 220px; padding: 10px; flex-direction: column; justify-content: end; align-items: end; border-radius: 10px 10px 0 0; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);}
+
+#now .swiper .txt_box{display: flex; padding: 10px; flex-direction: column; border-radius: 0 0 10px 10px; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);}
+#now .swiper .txt_box span{color: var(--run-main-darkgray); font-size: 1.2rem;}
+#now .swiper .txt_box h4{padding: 2px 0 6px; font-weight: 500; font-size: 1.6rem;}
+#now .swiper .txt_box h4+p{color: var(--run-main-darkgray); font-size: 1.4rem;}
+
+#now .now01 .img_box{background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/sub/challenge/marathon01.jpg) no-repeat center/cover;}
+#now .now02 .img_box{background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/sub/challenge/marathon02.jpg) no-repeat center/cover;}
+
+/*#ing_competition*/
+#ing_competition .card_ing{display: flex;  justify-content: space-between;}
+
+#ing_competition .card_ing .img_box{width: 80px; height: 80px; border-radius: 10px;}
+
+#ing_competition .card_ing .txt_box{display: flex; width: 210px; flex-direction: column; justify-content: space-between;}
+#ing_competition .card_ing .txt_box h3{font-weight: 500; font-size: 1.4rem;}
+#ing_competition .card_ing .txt_box h3+p{margin: 0 0 4px; color: var(--run-main-darkgray); font-size: 1.4rem;}
+#ing_competition .card_ing .txt_box span{color: var(--run-main-gray); font-weight: 500; font-size: 1.2rem;}
+#ing_competition .card_ing .txt_box ul li{font-size: 1.2rem;}
+
+#ing_competition .card_ing .d-day{display: flex; width: 24px; flex-direction: column; justify-content: center; align-items: center;}
+#ing_competition .card_ing .d-day .soon{color: var(--run-main-red);  font-weight: 500; font-size: 1.4rem;}
+#ing_competition .card_ing .d-day span, #ing_competition .card_ing .d-day p{color: var(--run-main-gray); font-weight: 500; font-size: 1.4rem;}
+
+#ing_competition .ing01 .img_box{background: url(../img/sub/challenge/marathon03.jpg) no-repeat center/cover;}
+#ing_competition .ing02 .img_box{background: url(../img/sub/challenge/marathon04.jpg) no-repeat center/cover;}
+#ing_competition .ing03 .img_box{background: url(../img/sub/challenge/marathon05.png) no-repeat center/cover;}
+
+/*page02*/
+.page02{display: none;}
+/*#weekly*/
+#weekly .swiper{padding: 20px 16px 0;}
+#weekly .swiper > div{height: 220px;}
+#weekly .swiper a{display: flex; height: 205px; padding: 16px; flex-direction: column; gap: 12px; border-radius: 10px; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);}
+#weekly .swiper a > img{width: 24px; height: 24px;}
+
+#weekly .top{display: flex; justify-content: space-between; align-items: center;}
+#weekly .top span{color: var(--run-main-gray); font-size: 1.2rem;}
+#weekly .top ul{display: flex; gap: 4px; align-items: center;}
+#weekly .top ul li{color: var(--run-main-darkgray); font-weight: 500; font-size: 1.2rem;}
+#weekly .top ul li:first-child{width: 18px; height: 18px; border-radius: 50%;}
+
+#weekly .weekly01 .top ul li:first-child{background: url(../img/sub/challenge/rank04.jpg) no-repeat center/cover;}
+#weekly .weekly02 .top ul li:first-child{background: url(../img/sub/challenge/rank05.jpg) no-repeat center/cover;}
+
+#weekly ol{display: flex; justify-content: space-between;}
+#weekly ol .txt_box{display: flex; width: 170px; height: 80px; padding: 4px 0; flex-direction: column; justify-content: space-between;}
+#weekly ol .txt_box p{width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600; font-size: 1.4rem;}
+#weekly ol .txt_box span{display: -webkit-box; width: 100%; height: 44px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; text-overflow: ellipsis; font-size: 1.2rem;}
+#weekly ol .img_box{width: 80px; height: 80px; border-radius: 10px;}
+
+#weekly .weekly01 ol .img_box{background: url(../img/sub/challenge/10km.jpg) no-repeat center/cover;;}
+#weekly .weekly02 ol .img_box{background: url(../img/sub/challenge/marathon08.jpg) no-repeat center/cover;}
+
+#weekly .btm{display: flex; gap: 12px; justify-content: end;}
+#weekly .btm li{display: flex; gap: 4px; font-size: 1.2rem;}
+#weekly .btm li img{width: 14px; height: 14px;}
+
+/*#latest*/
+#latest a{display: flex; flex-direction: column; gap: 8px;}
+#latest a > ul{display: flex; justify-content: space-between;}
+
+#latest .img .txt_box{width: 260px; padding: 2px 0;}
+#latest .txt .txt_box{width: 100%; padding: 2px 0;}
+#latest .txt_box h5{width: 100%; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; font-size: 1.4rem;}
+#latest .txt_box h5+p{display: -webkit-box; width: 100%; height: 30px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; color: var(--run-main-gray); font-weight: 500; font-size: 1.2rem;}
+
+#latest .img_box{width: 60px; height: 60px; border-radius: 10px;}
+
+#latest .latest01 .img_box{background: url(../img/sub/challenge/challenge02.jpg) no-repeat center/cover;}
+#latest .latest05 .img_box{background: url(../img/sub/challenge/rank08.jpg) no-repeat center/cover;}
+
+#latest ol{display: flex; justify-content: space-between; align-items: center;}
+#latest ol li{color: var(--run-main-gray); font-weight: 500; font-size: 1.2rem;}
+#latest ol li ul{display: flex; gap: 8px; align-items: center;}
+#latest ol li ul li{display: flex; gap: 4px;}
+#latest ol li ul li img{width: 14px; height: 14px;}
+
+/*#recommend*/
+#recommend .card_list{flex-wrap: wrap; flex-direction: row; gap: 17px;}
+#recommend .card_list a{width: calc((100% - 17px) / 2);}
+#recommend a .img_box{display: flex; width: 163px; height: 163px; padding: 10px; border-radius: 10px 10px 0 0; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1); align-items: end; justify-content: end;}
+#recommend a .img_box .tag{padding: 2px 8px; color: var(--run-main-white); border-radius: 50px; font-size: 1.2rem; background: var(--run-main-green);}
+
+#recommend a.recommend01 .img_box{background: url(../img/sub/challenge/recommand01.jpg) no-repeat center/cover;}
+#recommend a.recommend02 .img_box{background: url(../img/sub/challenge/recommand02.jpg) no-repeat center/cover;}
+#recommend a.recommend03 .img_box{background: url(../img/sub/challenge/recommand03.jpg) no-repeat center/cover;}
+#recommend a.recommend04 .img_box{background: url(../img/sub/challenge/recommand04.jpg) no-repeat center/cover;}
+
+#recommend a .txt_box{width: 163px; height: auto; padding: 10px; border-radius: 0 0 10px 10px; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);}
+#recommend a .txt_box span{color: var(--run-main-darkgray); font-size: 1rem;}
+#recommend a .txt_box h6{display: -webkit-box; width: 100%; height: 40px; margin: 4px 0 12px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; font-weight: 500; font-size: 1.6rem;}
+
+#recommend ol{display: flex; justify-content: space-between; align-items: center;}
+#recommend ol li{color: var(--run-main-darkgray); font-weight: 500; font-size: 1.2rem;}
+#recommend ol li ul{display: flex; gap: 8px; align-items: center;}
+#recommend ol li ul li{display: flex; gap: 4px; font-size: 1.2rem;}
+#recommend ol li ul li img{width: 14px; height: 14px;}
+
+/* challenge_01.html */
+.section .tit_sub{display: flex; justify-content: space-between; align-items: center;}
+.section .tit_sub h2{font-weight: 600; font-size: 2rem;}
+.section .tit_sub p{padding: 4px 12px; color: var(--run-main-white); font-size: 1.4rem; background: var(--run-main-green); border-radius: 50px;}
+
+/*#info*/
+#info{display: flex; padding: 0 0 20px; flex-direction: column; gap: 20px;}
+#info .img_area{display: flex; width: 100%; height: 250px; padding: 16px; align-items: end; justify-content: end;}
+#info.challenge01 .img_area{background: url(../img/sub/challenge/challenge01.jpg) no-repeat center/cover;}
+
+#info .txt_area{display: flex; flex-direction: column; gap: 20px;}
+
+#info .info_list li:not(:last-child){padding: 0 0 10px;}
+#info .info_list span{color: var(--run-main-darkgray); font-size: 1.4rem;}
+#info .info_list p{padding: 4px 0 0; font-weight: 500;}
+
+#info .info_list li .progress .walk{padding: 4px 0 8px; color: var(--run-main-gray); font-weight: 500; font-size: 2.2rem;}
+#info .info_list li .progress .walk .val{color: var(--run-main-green); font-style: normal; font-weight: 500; font-size: 2.2rem;}
+#info .info_list li .progress-bar-wrap{height: 10px; background: var(--run-main-lightgray01); border-radius: 50px;}
+#info .info_list li .progress-bar{width: 10px; height: 10px; transition: 0.9s; background-color: var(--run-main-green); border-radius: 50px;}
+
+/*#detail*/
+#detail h2{display: none;}
+#detail ul{display: flex; padding: 0 0 20px; gap: 20px;}
+#detail ul li.active p{color: var(--run-main-green); border-bottom: 2px solid var(--run-main-green);}
+#detail ul li p{padding: 0 0 4px; color: var(--run-main-gray); font-weight: 600; cursor: pointer;}
+
+#detail .detail_page{display: flex; flex-direction: column; gap: 10px;}
+#detail .page01 b{display: block; padding: 0 0 10px; font-weight: 400; font-size: 1.4rem;}
+#detail .page01 p{font-weight: 600;}
+#detail .page01 ol{padding-left: 16px; list-style: disc;}
+#detail .page01 ol li{font-weight: 500; font-size: 1.4rem;}
+#detail .page01 ol li:not(:last-child){padding: 0 0 12px;}
+
+/* marathon_01.html */
+/*#info*/
+#info .img_area .tag{padding: 4px 12px; color: var(--run-main-white); font-size: 1.4rem; background: var(--run-sub-green02); border-radius: 50px;}
+#info.marathon01 .img_area{background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/sub/challenge/marathon01.jpg) no-repeat center/cover;}
+
+#detail .page01 i{color: #F36C21; font-style: normal; font-weight: 600; font-size: 2.2rem;}
+#detail .page01 b span{font-weight: 500;}
+#detail .page01 .img_box{width: 343px; height: 343px;}
+#detail .page01 .img01{background: url(../img/sub/challenge/6k01.jpg) no-repeat center/cover;}
+#detail .page01 .img02{background: url(../img/sub/challenge/6k02.jpg) no-repeat center/cover;}
+
+/* routine.html */
+.routine{bottom: 66px;}
+
+.message{position: absolute; left: 50%; top: 50%; width: 375px; color: var(--run-main-gray); font-weight: 500; font-size: 1.8rem; transform: translate(-50%,-50%); text-align: center;}
+
+/*pop-up*/
+#dimmed{display: none;}
+.dimmed{position: fixed; left: 50%; top: 0; width: 375px; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); transform: translateX(-50%); z-index: 6;}
+
+.popup{position: relative; width: calc(100% - 32px); padding: 16px; border-radius: 10px; background: var(--run-main-white); text-align: center;}
+
+.popup .btn_close{position: absolute; right: 16px; top: 20px; width: 14px; height: 14px; font-size: 0; background: url(../img/common/icon_close.svg) no-repeat center/cover; cursor: pointer;}
+.popup p{display: inline-block; padding: 2px 52px; color: var(--run-main-white); font-weight: 500; font-size: 1.4rem; border-radius: 50px; background: var(--run-main-green);}
+
+.popup ul{display: flex; padding: 16px 0 0; justify-content: space-between;}
+.popup ul li{width: calc((100% - 16px) / 2);}
+.popup ul li a{display: inline-block; width: 100%; padding: 16px; font-size: 1.4rem; border: 1px solid var(--run-main-lightgray02); border-radius: 10px;}
+
+.popup ul li:first-child a::before{content: ''; display: block; margin: 0 auto 12px; width: 50px; height: 50px; border-radius: 50%; background: var(--run-main-lightgray02) url(../img/common/icon_run.svg) no-repeat center/24px 24px;}
+.popup ul li:last-child a::before{content: ''; display: block; margin: 0 auto 12px; width: 50px; height: 50px; border-radius: 50%; background: var(--run-main-lightgray02) url(../img/common/icon_flag.svg) no-repeat center/24px 24px;}
+
+/* #routine_before_set.html */
+.set .tit_set01:not(:last-child){padding: 0 0 20px;}
+.set .tit_set01 h2{padding: 0 0 10px; font-weight: 500; font-size: 1.6rem;}
+.set input[type="text"]{display: block; width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--run-main-lightgray01);}
+.set .tit_set01 span{display: block; color: var(--run-sub-green02); font-weight: 500; font-size: 1.2rem;}
+.set .set_list{display: flex; gap: 100px; justify-content: center;}
+.set .set_list li{width: 60px; color: var(--run-main-darkgray); font-size: 1.4rem; text-align: center;}
+.set .set_list li::before{content: ''; display: block; margin: 0 auto 12px; width: 50px; height: 50px; border-radius: 50%; background: var(--run-main-lightgray02);}
+
+/* #routine_set01.html */
+.set .tit_set02{display: flex; flex-direction: column; gap: 20px;}
+.set .tit_set02 h2{font-weight: 500; font-size: 1.8rem;}
+.set .tit_set02 h2+p{color: var(--run-main-darkgray); font-weight: 500; font-size: 1.4rem;}
+
+.set .tit_set02 .set_area{display: flex; padding: 190px 16px; justify-content: space-between; align-items: center;}
+.set .tit_set02 .set_area button{width: 48px; height: 48px; border-radius: 50%;}
+.set .tit_set02 .set_area p{font-weight: 600; font-size: 5.4rem;}
+.set .tit_set02 .set_area p span{font-weight: 500; font-size: 2.2rem;}
+
+.set .tit_set02 .set_area .btn_minus{background: var(--run-main-green) url(../img/common/icon_minus_yellow.svg) no-repeat center/25px 25px;}
+.set .tit_set02 .set_area .btn_plus{background: var(--run-main-green) url(../img/common/icon_plus_yellow.svg) no-repeat center/25px 25px;}
+
+.btn_set_btm{display: flex; gap: 10px;}
+
+/* #routine_set03.html */
+.set .list_checkbox li{display: flex; align-items: center; gap: 8px; font-weight: 500; font-size: 1.4rem;}
+.set .list_checkbox li:not(:last-child){padding: 16px 0;}
+.set .list_checkbox li:last-child{padding: 16px 0 0;}
+.set .list_checkbox li.line{padding: 0;}
+
+.set .list_checkbox li input{display: none;}
+.set .list_checkbox li input+label{width: 20px; height: 20px; background: url(../img/common/icon_checkbox_lightgray.svg) no-repeat center/cover; cursor: pointer;}
+.set .list_checkbox li input:checked+label{background: url(../img/common/icon_checkbox_green.svg) no-repeat center/cover; cursor: pointer;}
+.set .list_checkbox li input+label+label{color: var(--run-main-lightgray01); cursor: pointer;}
+.set .list_checkbox li input:checked+label+label{color: var(--run-main-green); cursor: pointer;}
