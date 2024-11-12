@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRIKE - 루틴</title>
+  <!-- FONT -->
+  <link rel="stylesheet" href="../../css/font.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- JS -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <header id="header" class="topbar topbar_main">
+      <h1>루틴</h1>
+      <div class="util util_routine">
+        <a href="#" class="btn_share">공유하기</a>
+        <a href="#" class="btn_setting">설정하기</a>
+        <a href="#" class="btn_bell">알림</a>
+      </div><!--//util-->
+    </header><!--//topbar_main-->
+
+    <div id="menu_list">
+      <button class="active">러너 루틴</button>
+      <button>코스 추천</button>
+    </div><!--//menu_list-->
+
+    <main id="main" class="main">
+
+      <section id="set" class="section set after_set">
+
+        <div id="page_list">
+
+          <div class="page_list01">
+
+            <ul class="tag_list tag_list02">
+              <li class="active"><a href="#">나의 루틴 보기</a></li>
+              <li><a href="#">다른 루틴 보기</a></li>
+            </ul>
+
+            <div class="tab_page">
+              <div class="page01">
+                <div class="inner">
+
+                  <div class="tit_set01">
+                    <h2>루틴 종류</h2>
+                    <div class="tab_3rd">
+                      <button class="active">러닝</button>
+                      <button>인터벌</button>
+                    </div><!--//tab_3rd-->
+                  </div><!--//tit_set01-->
+
+                  <div class="list_3rd">
+                    <div class="page01_3rd">
+
+                      <div class="section_set">
+
+                        <div class="tit_set01">
+                          <h2>루틴 이름</h2>
+                          <b>김러너의 러닝 루틴</b>
+                        </div><!--//tit_set01-->
+
+                        <div class="tit_set01 finished">
+                          <h2>목표 설정</h2>
+                          <ul class="set_list list01">
+                            <li>거리</li>
+                            <li>지속시간</li>
+                          </ul>
+                        </div><!--//tit_set01-->
+
+                        <div class="tit_set01 finished">
+                          <h2>반복 주기 <span>&#42;리마인드 러닝을 위해 알림을 설정할 수 있어요.</span>
+                          </h2>
+                          <ol class="set_list list02">
+                            <li>요일</li>
+                            <li>러닝 시간</li>
+                          </ol>
+                        </div><!--//tit_set01-->
+
+                      </div><!--//section_set-->
+
+                      <div class="sub_section section_total">
+                        <h3>전체 러닝</h3>
+                        <p>총<span>8491</span>km</p>
+                        <ol class="result_list">
+                          <li class="txt">584</li>
+                          <li class="guide_line"></li>
+                          <li class="txt">7'45"</li>
+                          <li class="guide_line"></li>
+                          <li class="txt">18,546</li>
+                        </ol>
+                      </div><!--//section_total-->
+
+                      <div class="sub_section section_monthly">
+                        <h3>이번 달 러닝</h3>
+                        <i>4일 연속 러닝 중이에요!</i>
+                        <div class="calendar-container">
+                          <div class="month-nav">
+                            <span class="arrow" id="prevMonth">&lt;</span>
+                            <span class="current-month" id="currentMonth"></span>
+                            <span class="arrow" id="nextMonth">&gt;</span>
+                          </div>
+
+                          <div class="calendar" id="calendarDays">
+                            <div class="day-name">Sun</div>
+                            <div class="day-name">Mon</div>
+                            <div class="day-name">Tue</div>
+                            <div class="day-name">Wed</div>
+                            <div class="day-name">Thu</div>
+                            <div class="day-name">Fri</div>
+                            <div class="day-name">Sat</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sub_section section_latest">
+                        <h3>최근 러닝</h3>
+                        <ol class="latest_list">
+
+                          <li class="latest_card">
+                            <h4>토요일 인터벌 러닝
+                              <span>2024년 10월 26일 14:28</span>
+                            </h4>
+                            <i>5set 중 3set를 성공했어요!</i>
+                            <ol class="result_list">
+                              <li class="txt">10.3</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">6'59"</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">384</li>
+                            </ol>
+                            <a href="#" class="btn_more">+ 자세히보기</a>
+                          </li><!--//latest_card-->
+
+                          <li class="latest_card">
+                            <h4>금요일 인터벌 러닝
+                              <span>2024년 10월 25일 14:28</span>
+                            </h4>
+                            <i>루틴 성공했어요!</i>
+                            <ol class="result_list">
+                              <li class="txt">10.3</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">6'59"</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">384</li>
+                            </ol>
+                            <a href="#" class="btn_more">+ 자세히보기</a>
+                          </li><!--//latest_card-->
+
+                          <li class="latest_card">
+                            <h4>목요일 인터벌 러닝
+                              <span>2024년 10월 24일 14:28</span>
+                            </h4>
+                            <ol class="result_list">
+                              <li class="txt">10.3</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">6'59"</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">384</li>
+                            </ol>
+                            <a href="#" class="btn_more">+ 자세히보기</a>
+                          </li><!--//latest_card-->
+
+                          <li class="latest_card">
+                            <h4>수요일 인터벌 러닝
+                              <span>2024년 10월 23일 14:28</span>
+                            </h4>
+                            <ol class="result_list">
+                              <li class="txt">10.3</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">6'59"</li>
+                              <li class="guide_line"></li>
+                              <li class="txt">384</li>
+                            </ol>
+                            <a href="#" class="btn_more">+ 자세히보기</a>
+                          </li><!--//latest_card-->
+
+                        </ol>
+                      </div>
+
+                    </div><!--//page01_3rd-->
+
+                    <div class="page02_3rd"></div><!--//page02_3rd-->
+
+                  </div><!--//list_3rd-->
+
+                </div><!--//inner-->
+              </div><!--//page01-->
+
+              <div class="page02"></div>
+            </div><!--//tab_page-->
+          </div><!--//page_list01-->
+
+          <div class="page_list02">
+            <div class="inner">
+              <div class="section_course02">
+                <h3>내 주변 코스 추천</h3>
+                <ol class="course_list">
+
+                  <li class="course_card card01">
+                    <a href="course01.html">
+                      <div class="inner">
+                        <div class="txt_box">
+                          <h4><span>0.2km 이내</span>초보자도 쉽게 뛰는 코스</h4>
+                          <ol class="info_list">
+                            <li>10<span>거리<i>(km)</i></span></li>
+                            <li>1<span>시간<i>(h)</i></span></li>
+                            <li class="img"><img src="../../img/sub/routine/star1.svg" alt="난이도"><span>난이도</span></li>
+                            <li>평지<span>경사도</span></li>
+                          </ol>
+                        </div><!--//txt_box-->
+                        <div class="img_box"></div>
+                      </div><!--//inner-->
+                      <div class="line"></div>
+                      <ul>
+                        <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">32</li>
+                        <li><img src="../../img/common/icon_eye_green.svg" alt="조회수">72</li>
+                      </ul>
+                    </a>
+                  </li><!--//course_card card01-->
+
+                  <li class="course_card card02">
+                    <a href="#">
+                      <div class="inner">
+                        <div class="txt_box">
+                          <h4><span>0.6km 이내</span>오선뷰와 함께 달리는 광안리 코스</h4>
+                          <ol class="info_list">
+                            <li>15<span>거리<i>(km)</i></span></li>
+                            <li>1.5<span>시간<i>(h)</i></span></li>
+                            <li class="img"><img src="../../img/sub/routine/star2.svg" alt="난이도"><span>난이도</span></li>
+                            <li>평지<span>경사도</span></li>
+                          </ol>
+                        </div><!--//txt_box-->
+                        <div class="img_box"></div>
+                      </div><!--//inner-->
+                      <div class="line"></div>
+                      <ul>
+                        <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">24</li>
+                        <li><img src="../../img/common/icon_eye_green.svg" alt="조회수">50</li>
+                      </ul>
+                    </a>
+                  </li><!--//course_card card02-->
+
+                  <li class="course_card card03">
+                    <a href="#">
+                      <div class="inner">
+                        <div class="txt_box">
+                          <h4><span>0.8km 이내</span>민락 수변 공원 코스</h4>
+                          <ol class="info_list">
+                            <li>8<span>거리<i>(km)</i></span></li>
+                            <li>50<span>시간<i>(m)</i></span></li>
+                            <li class="img"><img src="../../img/sub/routine/star1.svg" alt="난이도"><span>난이도</span></li>
+                            <li>평지<span>경사도</span></li>
+                          </ol>
+                        </div><!--//txt_box-->
+                        <div class="img_box"></div>
+                      </div><!--//inner-->
+                      <div class="line"></div>
+                      <ul>
+                        <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">254</li>
+                        <li><img src="../../img/common/icon_eye_green.svg" alt="조회수">3,172</li>
+                      </ul>
+                    </a>
+                  </li><!--//course_card card03-->
+
+                </ol>
+              </div>
+            </div>
+          </div><!--//page_list02-->
+
+        </div><!--//page_list-->
+
+      </section><!--//set-->
+    </main>
+
+    <!--하단 고정 버튼-->
+    <div class="btn_area routine routine_after">
+      <a href="#" class="btn_btm active">러닝 시작하기</a>
+    </div>
+
+    <!-- 하단 내비게이션바-->
+    <ul id="nav_bar">
+      <li><a href="../challenge/challenge.html">챌린지</a></li>
+      <li class="active"><a href="routine.html">루틴</a></li>
+      <li><a href="#">메인홈</a></li>
+      <li><a href="#">크루</a></li>
+      <li><a href="#">마이페이지</a></li>
+    </ul><!--//nav_bar-->
+
+  </div><!--//wrap-->
+</body>
+
+</html>
